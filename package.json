@@ -1,0 +1,68 @@
+{
+  "name": "koishi-plugin-group-manager",
+  "version": "0.1.0",
+  "description": "Koishi 插件：群管理与QQ群管（仅 OneBot 适配）",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mai-xiyu/koishi-plugin-group-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mai-xiyu/koishi-plugin-group-manager/issues"
+  },
+  "homepage": "https://github.com/Mai-xiyu/koishi-plugin-group-manager#readme",
+  "keywords": [
+    "koishi",
+    "koishi-plugin",
+    "qq",
+    "group",
+    "onebot",
+    "群管",
+    "群管理",
+    "入群验证",
+    "kick",
+    "moderation",
+    "admin"
+  ],
+  "author": "Mai_xiyu",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "@ltxhhz/koishi-plugin-skia-canvas": "^0.0.10",
+    "koishi": "^4.0.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.6.3"
+  },
+  "koishi": {
+    "description": {
+      "zh": "群管理与QQ群管插件（仅 OneBot 适配）。功能齐全，带web管理面板，每个管理员每个群都可以单独配置。"
+    },
+    "service": {
+      "required": [
+        "skia",
+        "database"
+      ],
+      "optional": [
+        "router",
+        "console"
+      ]
+    }
+  }
+}
