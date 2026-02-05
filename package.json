@@ -1,5 +1,5 @@
 {
-  "name": "koishi-plugin-group-manager",
+  "name": "@mai_xiyu/koishi-plugin-group-manager",
   "version": "0.1.0",
   "description": "Koishi 插件：群管理与QQ群管（仅 OneBot 适配）",
   "main": "dist/index.js",
